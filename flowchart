@@ -1,0 +1,11 @@
+graph TD
+    A[Mulai] --> B[Input: Banyak produk terjual]
+    B --> C[Input: Harga satuan produk]
+    C --> D[Hitung omset penjualan: banyak produk * harga satuan]
+    D --> E{Produk terjual > 100?}
+    E -->|Ya| F[Bonus = 20% dari omset penjualan]
+    E -->|Tidak| G[Bonus = 10% dari omset penjualan]
+    F --> H[Gaji total = Gaji pokok + Bonus]
+    G --> H
+    H --> I[Tampilkan Gaji total]
+    I --> J[Selesai]
